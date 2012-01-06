@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.eof{
+    clear: both;
+}
+.conteiner{
+}
+ul.toolbox{
+    margin: 0;
+    padding: 10px 10px 10px 0;
+    list-style: none;
+    background-color: #ccc;
+    background: -moz-linear-gradient( 100% 100% 180deg, #333,#ccc );
+    background: -webkit-gradient( 
+                linear, 
+                left top, 
+                right top, 
+                from(#000), 
+                to(#666));
+    position: fixed;
+    left: 0;
+    top: 30px;
+    width: 76px;
+    z-index: 100;
+    border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+}
+ul.toolbox li.tool{
+    float: left;
+    margin: 0;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-width: 0 0 1px 1px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+}
+ul.toolbox li.tool.selected{
+    background-color: #afc;
+}
+ul.toolbox li#undo{
+    background-image: url(images/iconza_ffffff/undo_32x32.png);
+}
+ul.toolbox li#redo{
+    background-image: url(images/iconza_ffffff/redo_32x32.png);
+}
+ul.toolbox li#clear{
+    background-image: url(images/iconza_ffffff/table_32x32.png);
+}
+ul.toolbox li#chalk{
+    background-image: url(images/chalk32.png);
+}
+ul.toolbox li#text{
+    background-image: url(images/iconza_ffffff/text_32x32.png);
+}
+ul.toolbox li#sponge{
+    background-image: url(images/sponge32.png);
+}
+ul.toolbox li#image{
+    background-image: url(images/iconza_ffffff/picture_32x32.png);
+}
+ul.toolbox li#slides{
+    background-image: url(images/iconza_ffffff/monitor_32x32.png);
+}
+
+ul.toolbox li ul{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.toolbox li ul li{
+    width: 50px;
+    height: 20px;
+    border-bottom: 1px dotted #ccc;
+    margin: 0;
+    padding: 0;
+}
+ul.toolbox li ul li:hover{
+    background: #66f;
+}
+ul.toolbox li ul li .prev{
+    float: left;
+    background: black;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+ul.toolbox li ul li.s1 div{
+    width: 1px;
+    height: 1px;
+    margin: 9px;
+}
+ul.toolbox li ul li.s3 div{
+    width: 3px;
+    height: 3px;
+    margin: 8px;
+}
+ul.toolbox li ul li.s6 div{
+    width: 6px;
+    height: 6px;
+    margin: 7px;
+}
+ul.toolbox li ul li.s10 div{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+ul.toolbox li ul li.s15 div{
+    width: 15px;
+    height: 15px;
+    margin: 2px 5px;
+}
+ul.toolbox li ul li.s20 div{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+.draw{
+    position: relative;
+}
+canvas{
+    cursor: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a#todo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}

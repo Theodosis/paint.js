@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>BlackBoard</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class='conteiner'>
+            <ul class="toolbox">
+                <li class="tool" id="undo" title="undo (u)"></li>
+                <li class="tool" id="redo" title="redo (r)"></li>
+                <li class="tool" id="chalk" title="chalk (c)">
+                    <span class="size">3</span>
+                    <ul>
+                        <li class="s1"><div class="prev"></div>1</li>
+                        <li class="s3"><div class="prev"></div>3</li>
+                        <li class="s6"><div class="prev"></div>6</li>
+                        <li class="s10"><div class="prev"></div>10</li>
+                        <li class="s15"><div class="prev"></div>15</li>
+                        <li class="s20"><div class="prev"></div>20</li>
+                    </ul>
+                </li>
+                <li class="tool" id="sponge" title="sponge (s)">
+                    <span class="size">20</span>
+                    <ul>
+                        <li class="s20">20</li>
+                        <li class="s30">30</li>
+                        <li class="s40">40</li>
+                        <li class="s50">50</li>
+                        <li class="s70">70</li>
+                        <li class="s100">100</li>
+                    </ul>
+                </li>
+                <li class="tool" id="text" title="text (t)"></li>
+                <li class="tool" id="clear" title="clear (Ctrl + c)"></li>
+                <li class="tool" id="image" title="upload an image"></li>
+                <li class="tool" id="slides" title="upload a presentation"></li>
+            </ul>
+            <div class="eof"></div>
+            <div class="draw">
+                <canvas id="bb">Sorry, not available with IE yet.</canvas>
+                <canvas id="text">Sorry, not available with IE yet.</canvas>
+                <canvas id="coments">Sorry, not available with IE yet.</canvas>
+            </div>
+        </div>
+        <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
